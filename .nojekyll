@@ -1,0 +1,4 @@
+touch .nojekyll  # Create an empty file
+git add .nojekyll
+git commit -m "Add .nojekyll for SPA"
+git push
