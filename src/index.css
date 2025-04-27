@@ -1,0 +1,70 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-body text-gray-100 bg-[#1A2138];
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display font-bold;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-3 rounded-md font-display font-semibold transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply bg-montana-primary text-white hover:bg-opacity-90;
+  }
+
+  .btn-secondary {
+    @apply bg-montana-secondary text-white hover:bg-opacity-90;
+  }
+
+  .btn-accent {
+    @apply bg-montana-accent text-white hover:bg-opacity-90;
+  }
+
+  .container-custom {
+    @apply container mx-auto px-4 md:px-8;
+  }
+
+  .section {
+    @apply py-12 md:py-20;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl mb-6 text-white;
+  }
+
+  .card {
+    @apply bg-[#1A2138] border border-white/10 rounded-lg shadow-lg;
+  }
+
+  .card-primary {
+    @apply bg-[#2E3A59] border-[#3A4A6B];
+  }
+
+  .card-secondary {
+    @apply bg-[#0BB68C] bg-opacity-20 border-[#0BB68C];
+  }
+
+  .card-accent {
+    @apply bg-[#FF6B6B] bg-opacity-20 border-[#FF6B6B];
+  }
+}
